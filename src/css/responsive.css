@@ -66,6 +66,10 @@
         font-size: 35px;
     }
 
+    .compre-ja .cartao{
+        width: 90%;
+    }
+
     .compre-ja .cartao .informacoes h3{
         font-size: 30px;
         letter-spacing: 2px;
@@ -90,6 +94,10 @@
 
     .ds2 .cartao-ds2 .informacoes-ds2 .titulo{
         font-size: 25px;
+    }
+
+    .ds2 .cartao-ds2 .informacoes-ds2 .btn-pre-venda{
+        width: 100%;
     }
 }
 
