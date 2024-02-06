@@ -1,0 +1,253 @@
+@charset 'UTF-8';
+
+body{
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 0 50px;
+    background-color: hsl(0, 0%, 0%);
+    border-bottom: 1px solid hsl(45, 76%, 20%);
+}
+
+header .logos{
+    display: flex;
+    gap: 15px;
+    height: 90px;
+}
+
+header .logos img:nth-last-child(1){
+    width: 250px;
+}
+
+header .menu{
+    display: flex;
+    gap: 30px;
+}
+
+header .menu li a{
+    font-family: 'MajaraBold';
+    font-size: 15px;
+    padding: 15px;
+    color: hsl(0, 0%, 100%);
+}
+
+header .menu li a:hover{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+main{
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 120px);
+    border-bottom: 1px solid hsl(45, 76%, 20%);
+}
+
+main .bg-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+main .informacoes{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    z-index: 1;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    max-width: 500px;
+}
+
+main .informacoes .container-informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 30px;
+    background-color: hsla(0, 0%, 0%, .5);
+    border-radius: 5px;
+    border: 1px solid hsla(0, 0%, 100%, .5);
+    box-shadow: 0px 0px 50px hsl(0, 0%, 0%, .3);
+}
+
+main .informacoes .container-informacoes .artes-do-jogo img{
+    width: 200px;
+}
+
+main .informacoes .container-informacoes h1{
+    font-family: 'MajaraThin';
+    font-size: 45px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+main .informacoes .container-informacoes p{
+    font-family: 'MajaraRegular';
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn-comprar, .btn-plataformas{
+    font-family: 'MajaraRegular';
+    font-size: 20px;
+    padding: 20px 40px;
+    background-color: hsla(0, 0%, 0%, .8);
+    border: 2px solid hsl(45, 76%, 20%);
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+    transition: all .3s ease-in;
+}
+
+.btn-plataformas{
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-comprar:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
+}
+
+.compre-ja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-color: hsl(205, 21%, 21%);
+    border-bottom: 1px solid hsl(45, 76%, 20%);
+}
+
+.compre-ja h2{
+    font-family: 'MajaraBold';
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.compre-ja .capa-do-jogo{
+    width: 350px;
+    border-radius: 4px;
+}
+
+.compre-ja .cartao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 0%);
+    border-radius: 10px;
+    width: 50%;
+    padding: 80px;
+    gap: 40px;
+    box-shadow: 0px 0px 50px hsl(45, 76%, 20%, .3);
+}
+
+.compre-ja .informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.compre-ja .informacoes h3{
+    font-family: 'MajaraThin';
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.compre-ja .informacoes p{
+    font-family: 'MajaraRegular';
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.compre-ja .informacoes .plataformas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.compre-ja .btn-plataformas .plataformas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    transition: all .3s ease-in;
+    display: none;
+    opacity: 0;
+}
+
+.compre-ja .btn-plataformas .plataformas.ativo{
+    display: flex;
+    opacity: 1;
+}
+
+.compre-ja .btn-plataformas .plataformas li{
+    padding: 20px;
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(1){
+    border: 1px solid hsl(214, 100%, 31%);
+    transition: all .3s ease-in;
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(1):hover{
+    background-color: hsl(214, 100%, 31%);
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(2){
+    border: 1px solid hsl(214, 100%, 45%);
+    transition: all .3s ease-in;
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(2):hover{
+    background-color: hsl(214, 100%, 45%);
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(3){
+    border: 1px solid hsl(40, 97%, 54%); 
+    transition: all .3s ease-in;
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(3):hover{
+    background-color: hsl(40, 97%, 54%);
+}
+
+footer{
+    font-family: 'MajaraRegular';
+    font-size: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span{
+    color: hsl(161, 100%, 47%);
+}
+
+footer .dev-em-dobro{
+    text-decoration: underline;
+    color: hsl(275, 58%, 50%);
+}
+
+footer .autor{
+    text-decoration: underline;
+}
+
+.dev-em-dobro:hover, .autor:hover{
+    text-decoration: none;
+}

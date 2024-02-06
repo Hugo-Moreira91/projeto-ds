@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'MajaraBold';
+    src: url('../fonts/Manjari-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MajaraRegular';
+    src: url('../fonts/Manjari-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MajaraThin';
+    src: url('../fonts/Manjari-Thin.ttf') format('truetype');
+}
