@@ -9,7 +9,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120px;
+    min-height: 120px;
     padding: 0 50px;
     background-color: hsl(0, 0%, 0%);
     border-bottom: 1px solid hsl(45, 76%, 20%);
@@ -37,9 +37,18 @@ header .menu li a{
     color: hsl(0, 0%, 100%);
 }
 
+header .menu li .link-ds2{
+    color: hsl(1, 88%, 46%);
+}
+
 header .menu li a:hover{
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid hsl(0, 0%, 100%);
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+}
+
+header .menu li .link-ds2:hover{
+    border-top: 1px solid hsl(1, 88%, 46%);
+    border-bottom: 1px solid hsl(1, 88%, 46%);
 }
 
 main{
@@ -56,7 +65,7 @@ main .bg-img{
 
 main .informacoes{
     position: absolute;
-    top: 100px;
+    top: 60px;
     right: 100px;
     z-index: 1;
     min-height: calc(100vh - 120px);
@@ -224,6 +233,84 @@ main .informacoes .container-informacoes p{
 
 .compre-ja .btn-plataformas .plataformas li:nth-child(3):hover{
     background-color: hsl(40, 97%, 54%);
+}
+
+.ds2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 50px;
+    background: linear-gradient(to bottom, hsl(0, 0%, 0%), hsl(0, 80%, 14%), hsl(0, 97%, 23%), hsl(0, 80%, 14%), hsl(0, 0%, 0%));
+}
+
+.ds2 h2{
+    font-family: 'MajaraBold';
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.ds2 .cartao-ds2{
+    display: flex;
+    gap: 20px;
+    width: 70%;
+    border: 1px solid hsla(0, 0%, 100%, .5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.ds2 .cartao-ds2 .capa-ds2{
+    width: calc(50% - 20px);
+}
+
+.ds2 .cartao-ds2 .informacoes-ds2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(50% - 20px);
+}
+
+.ds2 .cartao-ds2 .informacoes-ds2 .titulo{
+    font-family: 'MajaraThin';
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.ds2 .cartao-ds2 .informacoes-ds2 p{
+    font-family: 'MajaraRegular';
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.ds2 .cartao-ds2 .informacoes-ds2 .reserva{
+    font-family: 'MajaraBold';
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.ds2 .cartao-ds2 .informacoes-ds2 .btn-pre-venda{
+    font-family: 'MajaraRegular';
+    font-size: 20px;
+    padding: 20px 40px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 0%);
+    border: 2px solid hsl(44, 97%, 50%);
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.ds2 .cartao-ds2 .informacoes-ds2 .btn-pre-venda:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
 }
 
 footer{
